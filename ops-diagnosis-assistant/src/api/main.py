@@ -10,6 +10,7 @@ import uvicorn
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 from core.simple_agent import SimpleDiagnosisAgent
+from core.rag_agent import RAGDiagnosisAgent
 
 # 定义请求和响应模型
 class DiagnosisRequest(BaseModel):
@@ -41,7 +42,8 @@ app.add_middleware(
 class SessionManager:
     def __init__(self):
         self.sessions: Dict[str, Any] = {}
-        self.agent = SimpleDiagnosisAgent()
+        # self.agent = SimpleDiagnosisAgent()
+        self.agent = RAGDiagnosisAgent()  # 使用RAG增强智能体
     
     def get_or_create_session(self, session_id: str = None):
         if session_id is None:

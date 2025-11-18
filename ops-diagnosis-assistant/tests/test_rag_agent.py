@@ -2,13 +2,11 @@ import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
-from src.core.simple_agent import SimpleDiagnosisAgent
 from src.core.rag_agent import RAGDiagnosisAgent
 
 def test_simple_agent():
     print("🤖 测试 LangGraph 1.x 版本诊断智能体...")
     
-    # agent = SimpleDiagnosisAgent()
     agent = RAGDiagnosisAgent()
     
     # 测试用例
