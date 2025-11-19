@@ -13,7 +13,7 @@
 [![Docker](https://img.shields.io/badge/Docker-Ready-blue.svg)](https://www.docker.com/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-一个基于大语言模型的智能运维故障诊断系统，通过多轮对话引导用户完成自动化排障，降低对运维人员经验的依赖。
+一个基于内部知识数据结合大语言模型的智能运维故障诊断系统，通过多轮对话引导用户完成自动化排障，降低对运维人员经验的依赖。
 
 ## ✨ 核心特性
 
